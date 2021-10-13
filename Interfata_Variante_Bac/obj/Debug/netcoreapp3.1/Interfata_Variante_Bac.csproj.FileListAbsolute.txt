@@ -1,0 +1,15 @@
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.csprojAssemblyReference.cache
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.AssemblyInfoInputs.cache
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.AssemblyInfo.cs
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.exe
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.deps.json
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.runtimeconfig.json
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.runtimeconfig.dev.json
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.dll
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\bin\Debug\netcoreapp3.1\Interfata_Variante_Bac.pdb
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.dll
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.pdb
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.genruntimeconfig.cache
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.csproj.GenerateResource.cache
+D:\1_PROGRAMARE\C++\TEMA_VARIANTE_BAC\Interfata_Variante_Bac\Interfata_Variante_Bac\Interfata_Variante_Bac\obj\Debug\netcoreapp3.1\Interfata_Variante_Bac.ControlViewHome.resources
