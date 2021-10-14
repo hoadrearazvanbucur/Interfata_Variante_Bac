@@ -45,6 +45,7 @@ namespace Interfata_Variante_Bac.ControlView
             picture.BackgroundImageLayout = ImageLayout.Stretch;
             picture.BackColor = Color.Transparent;
             picture.Cursor = Cursors.Hand;
+            picture.TabStop = false;
         }
         public void setLabel(Label label,int l1,int l2,int s1,int s2,int size,string text)
         {            
@@ -55,6 +56,7 @@ namespace Interfata_Variante_Bac.ControlView
             label.Font = new Font("Cambria", size, FontStyle.Regular);
             label.BackColor = Color.Transparent;
             label.TextAlign = ContentAlignment.MiddleCenter;
+            label.TabStop = false;
         }
 
 

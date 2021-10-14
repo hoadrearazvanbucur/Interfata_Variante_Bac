@@ -35,5 +35,6 @@ namespace Interfata_Variante_Bac
             main.Location = new Point(10, 170);
             this.Controls.Add(main);
         }
+
     }
 }
