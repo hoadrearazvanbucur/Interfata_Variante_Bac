@@ -9,6 +9,18 @@ namespace Interfata_Variante_Bac
 {
     public class ControlViewHome : Form
     {
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // ControlViewHome
+            // 
+            this.ClientSize = new System.Drawing.Size(215, 200);
+            this.Name = "ControlViewHome";
+            this.ResumeLayout(false);
+
+        }
+
         public ControlViewHome()
         {
             layoutForm();
@@ -35,6 +47,5 @@ namespace Interfata_Variante_Bac
             main.Location = new Point(10, 170);
             this.Controls.Add(main);
         }
-
     }
 }

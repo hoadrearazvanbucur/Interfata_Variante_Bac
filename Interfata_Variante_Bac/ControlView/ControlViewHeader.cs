@@ -78,7 +78,7 @@ namespace Interfata_Variante_Bac.ControlView
         }
         public void layoutSign(Label title)
         {
-            setLabel(title, 0, this.Height-20, this.Width, 20, 14, "Hoadrea Razvan");
+            setLabel(title, 0, this.Height-20, this.Width, 20, 14, "Hoadrea Razvan Bucur");
             title.Font = new Font("Cambria", 14, FontStyle.Regular | FontStyle.Italic);
             title.TextAlign = ContentAlignment.MiddleRight;
         }
