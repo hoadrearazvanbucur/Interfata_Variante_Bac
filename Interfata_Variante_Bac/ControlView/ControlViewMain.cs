@@ -4,6 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using System.Diagnostics;
 
 namespace Interfata_Variante_Bac.ControlView
 {
@@ -231,21 +232,18 @@ namespace Interfata_Variante_Bac.ControlView
         }
         public void panelBS3_1_Click(object sender, EventArgs e)
         {
-            string path = nrVarianta() + "_S3_1";
-            layoutPictureForm(pictureForm, path);
-            pictureForm.Show();
+            string path = nrVarianta() + "_S3_1.txt";
+            Process.Start("notepad.exe", Application.StartupPath + @"\images\"+ path);
         }
         public void panelBS3_2_Click(object sender, EventArgs e)
         {
-            string path = nrVarianta() + "_S3_2";
-            layoutPictureForm(pictureForm, path);
-            pictureForm.Show();
+            string path = nrVarianta() + "_S3_2.txt";
+            Process.Start("notepad.exe", Application.StartupPath +@"\images\"+ path);
         }
         public void panelBS3_3_Click(object sender, EventArgs e)
         {
-            string path = nrVarianta() + "_S3_3";
-            layoutPictureForm(pictureForm, path);
-            pictureForm.Show();
+            string path = nrVarianta() + "_S3_3.txt";
+            Process.Start("notepad.exe", Application.StartupPath + @"\images\"+ path);
         }
 
 
