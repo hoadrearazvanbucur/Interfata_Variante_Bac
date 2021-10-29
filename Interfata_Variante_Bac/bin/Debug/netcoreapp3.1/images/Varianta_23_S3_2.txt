@@ -1,0 +1,33 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+ifstream f("bac.txt");
+
+int marecifra(int n)
+{
+    int maxim=-1;
+    while(n){
+        if(maxim<n%10)
+            maxim=n%10;
+        n=n/10;
+    }
+    return maxim;
+}
+
+int main()
+{
+    int i=0,n,mi=999,ma=-1,k;
+    f>>n;
+    while(i<n)
+    {
+        f>>k; i++;
+        if(marecifra(k)!=9){
+            if(mi>k)    mi=k;
+            if(ma<k)    ma=k;
+        }
+    }
+    cout<<"Cel mai mic numar care nu contine cifra 9: "<<mi<<endl;
+    cout<<"Cel mai mare numar care nu contine cifra 9: "<<ma<<endl;
+    return 0;
+}

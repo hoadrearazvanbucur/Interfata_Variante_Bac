@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,j,x[100][100];
+    cin>>n;
+    j=n;
+    for(int l=1;l<=n;l++)
+    {
+        x[l][j]=0;
+        int ct=1;
+        for(int k=j-1;k>=1;k--)
+            x[l][k]=ct++;
+        ct=1;
+        for(int k=j+1;k<=n;k++)
+            x[l][k]=ct++;
+        j--;
+    }
+
+
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=n;j++)
+            cout<<x[i][j]<<" ";
+        cout<<endl;
+    }
+}

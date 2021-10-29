@@ -167,17 +167,23 @@ namespace Interfata_Variante_Bac.ControlView
 
         public void arrowLeft_Click(object sender, EventArgs e)
         {
+            this.panelS2.Visible = false;
+            this.panelS3.Visible = false;
+            StreamReader fisier = new StreamReader(Application.StartupPath + @"\nrVariante.txt");
+            int nr = int.Parse(fisier.ReadLine());
             foreach (Control c in this.Controls)
                 if (c is Label && (c as Label).Text.Split(' ')[0].Equals("Varianta") == true)
                 {
                     int nrVarianta = int.Parse((c as Label).Text.Split(' ')[1]);
                     nrVarianta--;
-                    if (nrVarianta < 1) (c as Label).Text = "Varianta 1";
+                    if (nrVarianta < 1) (c as Label).Text = "Varianta " + nr;
                     else (c as Label).Text = "Varianta " + nrVarianta.ToString();
                 }
         }
         public void arrowRight_Click(object sender, EventArgs e)
         {
+            this.panelS2.Visible = false;
+            this.panelS3.Visible = false;
             StreamReader fisier = new StreamReader(Application.StartupPath + @"\nrVariante.txt");
             int nr = int.Parse(fisier.ReadLine());
             foreach (Control c in this.Controls)
@@ -186,7 +192,7 @@ namespace Interfata_Variante_Bac.ControlView
                     int nrVarianta = int.Parse((c as Label).Text.Split(' ')[1]);
                     nrVarianta++;
                     (c as Label).Text = "Varianta " + nrVarianta.ToString();
-                    if (nrVarianta >   nr) (c as Label).Text = "Varianta " + nr;
+                    if (nrVarianta > nr) (c as Label).Text = "Varianta 1";
                     else (c as Label).Text = "Varianta " + nrVarianta.ToString();
                 }
         }

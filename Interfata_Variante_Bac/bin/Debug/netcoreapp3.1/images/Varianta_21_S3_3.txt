@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+ifstream f("bac.txt");
+
+int main()
+{
+	int n,s=0,k=0,x[100][100];
+	f >> n;
+	for(int i=0;i<n;i++)
+        for(int j=0;j<n;j++)
+            f>>x[i][j];
+	for (int i=n-2,k=0;i>=n/2+1,k<n/2-1;i--,k++)
+		for (int j=2+k;j<n-2-k;j++)
+                s+=x[j][i];
+	cout << s;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int n,ok=0,nou,a;
+    cin>>n;
+    nou=n;
+    while(n/10)
+    {
+        ok++;
+        n=n/10;
+    }
+    a=pow(10,ok);
+    n=nou%a;
+    n=n/10;
+    ok=1;
+    for(int i=2;i<=n/2;i++)
+        if(n%i==0)
+            ok=0;
+            if(ok==1)
+                cout<<"Este prim "<<n;
+            else
+                cout<<"NU este prim "<<n;
+
+    return 0;
+}

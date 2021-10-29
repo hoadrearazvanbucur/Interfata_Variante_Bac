@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,n,n1,n2,n11=0,n22=0;
+    cin>>x>>n1>>n2;
+    while(n2){
+        if(n1%1000==x && n2%1000==x){
+            n11=n1;
+            n22=n2;
+        }
+        n1=n2;
+        cin>>n2;
+    }
+    if(!n11)    cout<<"NU EXISTA";
+    else    cout<<n11<<" "<<n22;
+    return 0;
+}

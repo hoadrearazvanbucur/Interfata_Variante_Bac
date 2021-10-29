@@ -73,7 +73,7 @@ namespace Interfata_Variante_Bac.ControlView
 
         public void layoutTitle(Label title)
         {
-            setLabel(title, 0, 0, this.Width, this.Height-20,24,"Variante Bacalaureat Informatica");
+            setLabel(title, 0, 0, this.Width, this.Height-20,24,"Variante Bacalaureat Informatica\n(mate-info)");
             title.Font = new Font("Cambria", 24, FontStyle.Regular | FontStyle.Bold);
         }
         public void layoutSign(Label title)

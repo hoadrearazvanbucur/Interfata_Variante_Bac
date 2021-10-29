@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int prim(int);
+
+int main()
+{
+    int n;
+    cin>>n;
+    while(n !=0){
+        if(n%2==0 && n!=2){
+            int ok=0;
+            for(int a=n;a>=n/2;a--)
+            if(prim(a)){
+                for(int b=1;b<=n/2;b++)
+                    if(prim(b))
+                if(a+b==n && ok<2){
+                        ok++;
+                    cout<<"N = "<<n<<"  |  a= "<<a<<"  b= "<<b<<endl;
+                }if(ok==2) cout<<endl;
+            }
+        }
+        cin>>n;
+    }
+    return 0;
+}
+
+int prim(int a)
+{
+    for(int i=2;i<=a/2;i++)
+        if(a%i==0)
+            return 0;
+    return 1;
+}
