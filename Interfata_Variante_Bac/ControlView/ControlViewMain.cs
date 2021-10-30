@@ -145,6 +145,23 @@ namespace Interfata_Variante_Bac.ControlView
         public void layoutVarianta(Label varianta, string text)
         {
             setLabel(varianta, 100, 30, 260, 50, 20, text);
+            varianta.MouseEnter += new EventHandler(varianta_MouseEnter);
+            varianta.MouseLeave += new EventHandler(varianta_MouseLeave);
+        }
+
+        public void varianta_MouseEnter(object sender, EventArgs e)
+        {
+            StreamReader fisier = new StreamReader(Application.StartupPath + @"\nrVariante.txt");
+            int nr = int.Parse(fisier.ReadLine());
+            foreach (Control control in this.Controls)
+                if (control is Label && (control as Label).Text.Split(' ')[0].Equals("Varianta") == true)
+                    (control as Label).Text += "  (1->"+nr+")";
+        }
+        public void varianta_MouseLeave(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+                if (control is Label && (control as Label).Text.Split(' ')[0].Equals("Varianta") == true)
+                    (control as Label).Text = (control as Label).Text.Split(' ')[0] +" "+ (control as Label).Text.Split(' ')[1];
         }
 
 
