@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+#include <math.h>
+
+using namespace std;
+ifstream f("BAC.TXT");
+
+int main()
+{
+    int n,ok=0,s=0;
+    while(f>>n)
+        if(sqrt(n)==(int)sqrt(n))
+            if(ok==0){
+                cout<<n;
+                s+=n;
+                ok=1;
+            }
+            else{
+                s+=n;
+                cout<<"+"<<n;
+            }
+    if(ok==1)
+        cout<<"="<<s;
+    return 0;
+}
