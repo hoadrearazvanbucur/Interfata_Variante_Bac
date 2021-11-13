@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+bool CifraInOrdineCrescatoare(int n)
+{
+    int c,flag,c1;
+    flag=1;
+    c1=n%10;
+    do
+    {
+        c=c1;
+        n=n/10;
+        c1=n%10;
+        if(c<c1)
+        {
+            flag=0;
+            break;
+        }
+    }while(n);
+    if(flag==1)
+        return true;
+    else
+        return false;
+}
+
+int main()
+{
+    cout<<CifraInOrdineCrescatoare(432);
+}

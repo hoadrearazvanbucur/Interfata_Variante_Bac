@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int aux1,aux2,p=1,s=0,i,n,c1,c2,k=0;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        aux1=i;
+        aux2=i;
+        while(aux1){
+            c1=aux1%10;
+            s=s+c1;
+            aux1=aux1/10;
+        }
+        while(aux2){
+            c2=aux2%10;
+            p=p*c2;
+           aux2=aux2/10;
+        }
+    if(i%aux1==0&&i%aux2==0)
+          k++;
+          if(k=1)
+        cout<<i<<"\t";
+}
+

@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x[2000];
+    int n,i,maxim=0,minim=2000;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"x["<<i<<"]=";
+        cin>>x[i];
+        if(maxim<x[i])
+            maxim=x[i];
+    }
+
+    int y[2000];
+    for(i=0;i<=maxim;i++)
+        y[i]=0;
+    for(i=0;i<=maxim;i++)
+        y[x[i]]++;
+
+    for(i=1;i<=maxim;i++)
+	    if(y[i])
+            	cout<<<<y[i]<<endl;
+}

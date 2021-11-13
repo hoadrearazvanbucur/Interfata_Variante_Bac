@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x[100],n,s=0,k=0,i,a=0,b=0,y[100],z[100];
+    double ma,p1,p2;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"x["<<i<<"]=";
+        cin>>x[i];
+        k++;
+        s=s+x[i];
+    }
+    ma=(double)s/k;
+    for(i=0;i<n;i++)
+    {
+        if(x[i]>ma)
+        {
+           y[a]=x[i];
+            a++;
+        }
+        if(x[i]<ma)
+        {
+            z[b]=x[i];
+            b++;
+        }
+    }
+    cout<<(double)100*a/n<<endl;
+    cout<<(double)100*b/n;
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, b, x=0, p=1;
+    cin>>n>>b;
+    while (n)
+        x+=p*(n%10), p*=b, n/=10;
+        cout<<x;
+}
