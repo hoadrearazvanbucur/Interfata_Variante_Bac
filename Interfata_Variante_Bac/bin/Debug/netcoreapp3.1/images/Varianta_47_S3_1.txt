@@ -1,0 +1,72 @@
+#include <iostream>
+
+using namespace std;
+
+int factori(int n,int m)
+{
+    int fn[100],fm[100],k=0;
+    for(int i=0;i<100;i++){
+        fn[i]=0;
+        fm[i]=0;
+    }
+    while(m!=n && m>=1 && n>=1){
+        for(int i=2;i<=(m+n)/2;i++){
+            int ok=1;
+            for(int j=2;j<=i/2;j++)
+                if(i%j==0)
+                    ok=0;
+            if(ok==1){
+                while(m%i==0){
+                    fm[i]++;
+                    m=m/i;
+                }
+                while(n%i==0){
+                    fn[i]++;
+                    n=n/i;
+                }
+            }
+        }
+    }
+    for(int i=0;i<=100;i++){
+        int ok=1;
+        if(fn[i]==fm[i] && fn[i]!=0 && fm[i]!=0){
+            for(int j=2;j<=i/2;j++)
+                if(i%j==0)
+                    ok=0;
+                if(ok==1)
+                    k++;
+        }
+    }
+    return k;
+}
+
+int main()
+{
+    cout<<factori(16500,10780);
+    return 0;
+}
+
+
+int factori(int n, int m)
+ {
+    int p, p1, d = 2, ct = 0;
+    while(n > 1)
+    {
+        p = 0;
+        p1 = 0;
+        while(n % d == 0)
+        {
+            p++;
+            n = n / d;
+        }
+        while(m % d == 0)
+        {
+            p1++;
+            m = m / d;
+        }
+        if(p == p1 && p != 0)
+            ct++;
+         d++;
+      }
+    return ct;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,x[21][21],a=0,b;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        b=0;
+        for(int j=1;j<=n;j++){
+            if(i+j<=n+1)
+                x[i][j]=j+a;
+            else
+                x[i][j]=n-b++-1;
+        cout<<x[i][j]<<" ";
+        }
+        a++;
+        cout<<endl;
+    }
+    return 0;
+}
