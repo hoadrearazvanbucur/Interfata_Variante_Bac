@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+void nrfp(int n,int &m)
+{
+    for(int i=2;i<=n;i++)
+    {
+        int k=2,ok=0;
+        while(i>=k){
+        while(i%k==0)
+        {
+            i=i/k;
+            ok++;
+        }
+        k++;
+        }
+        if(ok<i)
+            m=ok;
+    }
+}
+
+int main()
+{
+    int m=0;
+    nrfp(100,m);
+    cout<<m;
+    return 0;
+}

@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int cif(int a,int b)
+{
+    int k=0;
+    while(a)
+    {
+        if(b==a%10)
+            k++;
+        a=a/10;
+    }
+    return k;
+}
+
+int main()
+{
+    int a[10]={0};
+    int x,k=0,n=0,i;
+    cin>>x;
+    for(i=0;i<10;i++)
+    {
+        a[i]=cif(x,i);
+        if(a[i]%2!=0)
+            k++;
+    }
+    if(k>1)
+        cout<<0;
+    else{
+        for(i=0;i<=9;i++)
+            if(a[i]>1){
+                n=n+i;
+                n=n*10;
+            }
+        for(i=9;i>=0;i--)
+            if(a[i]>1){
+                n=n+i;
+                n=n*10;
+            }
+
+        n=n/10;
+        cout<<n;
+    }
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int n,nou=0,k=0,r;
+    cin>>n;
+    while(n)
+    {
+        r=n%2;
+        nou=nou+pow(10,k-1)*r;
+        n=n/2;
+        k++;
+    }
+    cout<<nou;
+    return 0;
+}
