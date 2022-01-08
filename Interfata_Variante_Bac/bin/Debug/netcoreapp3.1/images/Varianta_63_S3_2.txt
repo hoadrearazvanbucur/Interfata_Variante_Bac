@@ -1,0 +1,26 @@
+#include    <iostream>
+using namespace std;
+int main()
+{
+    int n, k, matrice[21][21], p = 1;
+    cin >> n >> k;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            for (int kk = 1; kk <= k; kk++)
+            {
+                matrice[i][p] = j + i;
+                p = p + 1;
+            }
+        }
+        p = 1;
+    }
+    for(int i = 1; i <= n; i++)
+    {
+        for(int j = 1; j <= k * n; j++)
+            cout << matrice[i][j] << " ";
+        cout << "\n";
+    }
+    return 0;
+}

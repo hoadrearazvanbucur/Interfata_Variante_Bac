@@ -1,0 +1,32 @@
+#include    <iostream>
+#include    <cstring>
+using namespace std;
+int main()
+{
+    char text[101], rezultat[101] = "";
+    int contor = 0;
+    cin.getline(text, 101);
+    char *cuvant = strtok(text, " ");
+    while(cuvant)
+    {
+        char cuvantAux[101], primaLit;
+        strcpy(cuvantAux, cuvant);
+        if(strlen(cuvant) >= 3)
+        {
+            primaLit = cuvantAux[0];
+            for(int i = 0; i < strlen(cuvant); i++)
+                cuvantAux[i] = cuvantAux[i + 1];
+            cuvantAux[strlen(cuvant) - 1] = primaLit;
+            contor++;
+        }
+        strcat(rezultat, cuvantAux);
+        strcat(rezultat, " ");
+        cuvant = strtok(NULL, " ");
+    }
+    if(contor != 0)
+        cout << rezultat;
+    else
+        cout << "nu exista";
+    
+    return 0;
+}

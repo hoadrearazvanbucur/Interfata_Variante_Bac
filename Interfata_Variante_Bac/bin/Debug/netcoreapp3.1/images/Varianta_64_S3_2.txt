@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+void duplicare(int n, int &d)
+{
+    int invers = 0;
+    int ok = 0;
+    while(n != 0)
+    {
+        int c = n % 10;
+        invers = invers * 10 + c;
+        if(c % 2 != 0)
+        {
+            invers = invers* 10 + c;
+            ok = 1;
+        }
+        n = n / 10;
+    }
+    if(ok == 1)
+    {
+        d = 0;
+        while(invers != 0)
+        {
+            int c = invers % 10;
+            d = d * 10 + c;
+            invers = invers / 10;
+        }
+    }
+    else
+        d = -1;
+}
+
+int main()
+{
+int n=32;
+	duplicare(123,n);
+}

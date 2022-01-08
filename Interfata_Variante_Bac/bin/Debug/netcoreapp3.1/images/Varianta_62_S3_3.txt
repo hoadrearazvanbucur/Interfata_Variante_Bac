@@ -1,0 +1,26 @@
+#include    <iostream>
+#include    <fstream>
+using namespace std;
+ifstream fin("bac.in");
+int AP[1000];
+int main()
+{
+    int x, nrMax = 0;
+    while(fin >> x)
+    {
+        AP[x]++;
+        if(x > nrMax)
+            nrMax = x;
+    }
+    int contorImp = 0;
+    for(int i = 1; i <= nrMax; i++)
+    {
+        if(AP[i] % 2 == 1)
+            contorImp++;
+    }
+    if(contorImp > 1)
+        cout << "NU";
+    else
+        cout << "DA";
+    return 0;
+}

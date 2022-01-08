@@ -1,0 +1,23 @@
+#include    <iostream>
+#include    <fstream>
+using namespace std;
+ifstream fin("bac.txt");
+int main()
+{
+    int sufix, nr_1, nr_2, ultim = -1, precedent = -1;
+    fin >> sufix >> nr_1;
+    while(fin >> nr_2)
+    {
+        if(nr_1 % 1000 == sufix && nr_2 % 1000 == sufix)
+        {
+            ultim = nr_2;
+            precedent = nr_1;
+        }
+        nr_1 = nr_2;
+    }
+    if(ultim != -1)
+        cout << precedent << " " << ultim;
+    else
+        cout << "nu exista";
+    return 0;
+}

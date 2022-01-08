@@ -1,0 +1,51 @@
+#include    <iostream>
+#include    <cstring>
+using namespace std;
+int main()
+{
+    char s[101];
+    char s1[101] = "", s2[101] = "";
+    int n;
+    int totalCuvinte = 0, totalCuvinteGn = 0, totalCuvinteLn = 0;
+    cin >> n;
+    cin.get();
+    cin.getline(s, 100);
+    char *cuvant = strtok(s, " ");
+    while(cuvant != NULL)
+    {
+        if(strlen(cuvant) >= n)
+        {
+            strcat(s1, cuvant);
+            strcat(s1, " ");
+            totalCuvinteGn++;
+        }
+        else
+        {
+            strcat(s2, cuvant);
+            strcat(s2, " ");
+            totalCuvinteLn++;
+        }
+        totalCuvinte++;
+        cuvant = strtok(NULL, " ");
+    }
+    if(totalCuvinteGn != 0 && totalCuvinteLn != 0)
+    {
+        cuvant = strtok(s1, " ");
+        while(cuvant != NULL)
+        {
+            cout << cuvant << "\n";
+            cuvant = strtok(NULL, " ");
+        }
+        cuvant = strtok(s2, " ");
+        while(cuvant != NULL)
+        {
+            cout << cuvant << "\n";
+            cuvant = strtok(NULL, " ");
+        }
+    }
+    else
+    {
+        cout << "nu exista";
+    }
+    return 0;
+}
