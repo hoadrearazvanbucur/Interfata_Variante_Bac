@@ -1,0 +1,26 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+ifstream f("bac.in");
+
+int main()
+{
+    int x[101]={0},k,a,b;
+    while(f>>k)
+        if(k<99 && k>9)
+            x[k]=1;
+    k=2;
+    for(int i=98;i>=10;i--)
+        if(!x[i] && i/10 != i%10 && k){
+            if(k==2)
+                a=i;
+            else
+                b=i;
+            k--;
+        }
+    if(k==2)
+        cout<<"nu exista";
+    else
+        cout<<a<<" "<<b;
+}

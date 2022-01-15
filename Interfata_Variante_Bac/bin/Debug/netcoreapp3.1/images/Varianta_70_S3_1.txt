@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int putere(int n)
+{
+    int a=2,k,s=100,r=0;
+    while(n>=a){
+        k=0;
+        while(n%a==0){
+            n=n/a;
+            k++;
+        }
+        if(s>k && k){
+            r=a;
+            s=k;
+        }
+        a++;
+    }
+    return r;
+}
+
+int main()
+{
+    cout<<putere(880);
+    return 0;
+}

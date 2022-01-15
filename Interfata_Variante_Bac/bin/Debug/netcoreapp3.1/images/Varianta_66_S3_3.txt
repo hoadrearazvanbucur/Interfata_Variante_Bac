@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,ci,c,flag=0;
+    cin>>n;
+    ci=0;
+    c=1;
+    while(n){
+        if(ci>c)
+            flag=1;
+        ci=n%10;
+        n=n/10;
+        c=n%10;
+    }
+    if(flag)
+        cout<<"Nu";
+    else
+        cout<<"Da";
+
+}
+v

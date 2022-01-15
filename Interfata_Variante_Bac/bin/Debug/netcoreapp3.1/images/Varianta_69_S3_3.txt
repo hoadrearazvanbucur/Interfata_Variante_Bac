@@ -1,0 +1,21 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+ifstream f("bac.txt");
+
+int main()
+{
+    int x,n,n1,n2,n11=0,n22=0;
+    f>>x>>n1;
+    while(f>>n2){
+        if(n1%1000==x && n2%1000==x){
+            n11=n1;
+            n22=n2;
+        }
+        n1=n2;
+    }
+    if(!n11)    cout<<"NU EXISTA";
+    else    cout<<n11<<" "<<n22;
+    return 0;
+}
