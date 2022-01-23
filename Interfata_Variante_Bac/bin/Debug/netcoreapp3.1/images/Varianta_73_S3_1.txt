@@ -1,0 +1,26 @@
+#include    <iostream>
+#include    <fstream>
+using namespace std;
+ifstream fin("numere.in");
+int main()
+{
+    int total = 0;
+    int n;
+    int x, y;
+    fin >> n;
+    fin >> x;
+    y = x;
+    total = total + (n - x);
+    while(fin >> x)
+    {
+        if(x != y)
+            total = total + (y - x - 1);
+        y = x;
+    }
+    total = total + (x - 1);
+    if(total != 0)
+        cout << total;
+    else
+        cout << "NU";
+    return 0;
+}

@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int Impare(int &n)
+{
+    int rasturnat = 0;
+    int noulN = 0;
+    int copieN = n;
+    while(n != 0)
+    {
+        int cifra = n % 10;
+        n = n / 10;
+        int cifraNoua;
+        if(cifra % 2 == 1)
+            cifraNoua = cifra - 1;
+        else
+            cifraNoua = cifra;
+        rasturnat = rasturnat * 10 + cifraNoua;
+    }
+    while(rasturnat != 0)
+    {
+        int cifra = rasturnat % 10;
+        rasturnat = rasturnat / 10;
+        noulN = noulN * 10 + cifra;
+    }
+    if(copieN % 10 == 0)
+        noulN = noulN * 10;
+    n = noulN;
+}
+
+int main()
+{
+	int n;
+	cout<<Impare(123);
+}
